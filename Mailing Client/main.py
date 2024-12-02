@@ -14,12 +14,12 @@ with open('password.txt', 'r') as f:
     password = f.read().strip()
 
 # Log in to the server using your Gmail credentials
-server.login('m7385204@gmail.com', password)
+server.login('username1@gmail.com', password)
 
 # Create the email
 msg = MIMEMultipart()
-msg['From'] = 'Hicham'
-msg['To'] = 'm073852.04@gmail.com'
+msg['From'] = 'Name'
+msg['To'] = 'username2@gmail.com'
 msg['Subject'] = 'Just A Test'
 
 # Read the message body from a file
@@ -40,7 +40,7 @@ msg.attach(p)
 
 # Convert the message to a string and send it
 text = msg.as_string()
-server.sendmail('m7385204@gmail.com', 'm073852.04@gmail.com', text)
+server.sendmail('username1@gmail.com', 'username2@gmail.com', text)
 
 # Quit the server
 server.quit()
