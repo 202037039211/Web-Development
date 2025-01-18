@@ -1,0 +1,6 @@
+Hello Word!
+
+This is a mail sent with Python!
+
+kind regards!
+Name

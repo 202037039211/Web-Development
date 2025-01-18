@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+#navbar {
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#main-doc {
+    margin-left: 220px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.main-section {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    #navbar {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+    
+    #main-doc {
+        margin-left: 0;
+    }
+}
